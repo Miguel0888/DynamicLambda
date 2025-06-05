@@ -1,6 +1,9 @@
-package org.example.util;
+package org.example.compiler.internal.memoryfs;
 
-import javax.tools.*;
+import javax.tools.FileObject;
+import javax.tools.ForwardingJavaFileManager;
+import javax.tools.JavaFileManager;
+import javax.tools.JavaFileObject;
 import java.util.HashMap;
 import java.util.Map;
 

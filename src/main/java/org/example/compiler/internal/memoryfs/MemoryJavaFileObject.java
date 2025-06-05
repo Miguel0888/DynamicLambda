@@ -1,4 +1,4 @@
-package org.example.util;
+package org.example.compiler.internal.memoryfs;
 
 import javax.tools.SimpleJavaFileObject;
 import java.io.ByteArrayOutputStream;
