@@ -109,6 +109,27 @@ Content-Type: application/json
 
 ➡ Dadurch wird mspaint geöffnet und ein vorher erstelltes Bild bemalt.
 
+## 📅 Beispiel: Aktuelles Datum im Format ddMMyy zurückgeben
+
+**Beispiel-Request:**
+
+```json
+{
+  "code": "java.time.LocalDate today = java.time.LocalDate.now();\njava.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern(\"ddMMyy\");\nreturn today.format(formatter);"
+}
+```
+
+**Antwort:**
+
+```json
+{
+  "output": "050624"
+}
+```
+
+➡ Gibt das aktuelle Datum als Zeichenkette im Format `ddMMyy` zurück (z. B. 5. Juni 2024 → `050624`)
+
+
 ---
 
 ## 🧪 Test mit curl
